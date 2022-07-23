@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json.schemastore.org/swcrc",
+  "exclude": "**/node_modules/**",
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    }
+  },
+  "minify": true,
+  "sourceMaps": true
+}

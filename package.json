@@ -1,0 +1,33 @@
+{
+  "name": "projects",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "test": "turbo run test --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "turbo": "turbo run"
+  },
+  "devDependencies": {
+    "@commitlint/config-angular": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "latest",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "prettier": "latest",
+    "turbo": "latest",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "yarn@3.2.2"
+}
